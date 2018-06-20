@@ -22,7 +22,7 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-def move(board, index, method(:current_player))
+def move(board, index, character(method(:current_player))
   board[index] = character
 end
 
