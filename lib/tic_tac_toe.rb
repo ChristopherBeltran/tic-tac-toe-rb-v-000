@@ -206,10 +206,8 @@ end
  if draw?(board)
   end
       print "Cat's Game!"
-  elseif won?(board)
+  if won?(board)
 end  
     print "Congratulations #{won?(board)}!"
-else
-    turn(board)
   end
 end
