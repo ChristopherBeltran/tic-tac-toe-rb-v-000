@@ -51,7 +51,7 @@ def turn(board)
   if index.between?(0, 8) == false || valid_move?(board, index) == false
     turn(board)    
   else
-      move(board, index, current_player)
+      move(board, index, current_player(board))
       display_board(board)
       
     end
