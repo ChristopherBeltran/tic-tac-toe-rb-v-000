@@ -203,11 +203,7 @@ def play(board)
   until over?(board)
   turn(board)
 end
-  
-  case
-  
-  when draw?(board)
-    print "Cat's Game!"
+ if draw?(board)
     break
   when won?(board)
     print "Congratulations #{won?(board)}!"
