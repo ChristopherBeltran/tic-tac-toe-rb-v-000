@@ -210,4 +210,3 @@ end
 end  
     print "Congratulations #{won?(board)}!"
   end
-end
