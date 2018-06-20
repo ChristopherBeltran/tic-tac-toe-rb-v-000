@@ -22,7 +22,7 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-def move(board, index, character)
+def move(board, index, character = "X")
   board[index] = character
 end
 
@@ -51,7 +51,7 @@ def turn(board)
   if index.between?(0, 8) == false || valid_move?(board, index) == false
     turn(board)    
   else
-      move(board, index, character)
+      move(board, index, character = "X")
       display_board(board)
       
     end
