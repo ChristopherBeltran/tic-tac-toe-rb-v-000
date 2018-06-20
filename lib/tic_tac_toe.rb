@@ -23,7 +23,7 @@ def input_to_index(input)
 end
 
 def move(board, index, character = method(:current_player))
-  board[index] = current_player
+  board[index] = character
 end
 
 def position_taken?(board, index)
@@ -51,7 +51,7 @@ def turn(board)
   if index.between?(0, 8) == false || valid_move?(board, index) == false
     turn(board)    
   else
-      move(board, index, current_player)
+      move(board, index, character)
       display_board(board)
       
     end
