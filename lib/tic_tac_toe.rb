@@ -205,8 +205,8 @@ def play(board)
 end
  if draw?(board)
   end
-      print "Cat's Game!"
+      puts "Cat's Game!"
   if won?(board)
 end  
-    print "Congratulations #{board}!"
+    puts "Congratulations #{board}!"
   end
