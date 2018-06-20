@@ -208,5 +208,5 @@ end
       print "Cat's Game!"
   if won?(board)
 end  
-    print "Congratulations #{won?(board)}!"
+    print "Congratulations #{board}!"
   end
