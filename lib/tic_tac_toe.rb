@@ -208,5 +208,5 @@ end
       puts "Cat's Game!"
   if won?(board)
 end  
-    puts "Congratulations #{board}!"
+    puts "Congratulations #{won?(board)}!"
   end
