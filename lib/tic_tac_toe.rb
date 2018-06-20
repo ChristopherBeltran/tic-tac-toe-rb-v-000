@@ -204,11 +204,12 @@ def play(board)
   turn(board)
 end
  if draw?(board)
-    break
-  when won?(board)
+  end
+      print "Cat's Game!"
+  elseif won?(board)
+end  
     print "Congratulations #{won?(board)}!"
-    break
-  else
+else
     turn(board)
   end
 end
